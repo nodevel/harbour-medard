@@ -1,0 +1,31 @@
+Name: harbour-medard
+Summary: Medard Weather Forecast for Czech Republic and Central Europe
+Version: 0.9.2
+Release: 1
+Group: Qt/Qt
+URL: https://openrepos.net/content/nodevel/medard-weather
+License: GPL
+Sources:
+- '%{name}-%{version}.tar.bz2'
+Description: |-
+  Medard provides detailed weather forecast for Czech Republic and Central Europe.
+  It is based on numerical weather prediction model MM5, a joint project of the Institute of Computer Science AS CR and Czech Hydrometeorological Institute.
+Configure: none
+Builder: qtc5
+PkgConfigBR:
+- Qt5Quick
+- Qt5Qml
+- Qt5Core
+- sailfishapp >= 0.0.10
+Requires:
+- sailfishsilica-qt5 >= 0.10.9
+Files:
+- '%{_bindir}'
+- '%{_datadir}/%{name}/qml'
+- '%{_datadir}/applications/%{name}.desktop'
+- '%{_datadir}/icons/hicolor/86x86/apps/%{name}.png'
+- /usr/bin
+- /usr/share/harbour-medard
+- /usr/share/applications
+- /usr/share/icons/hicolor/86x86/apps
+PkgBR: []
